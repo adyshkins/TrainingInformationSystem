@@ -10,6 +10,172 @@
       Title="AccountStudentPage">
 
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="261"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Левый столбец -->
+        <TextBlock Grid.Column="0"
+                   Grid.Row="0"
+                   Text="Фамилия"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Left"
+                   Margin="77 0 0 0"
+                   FontSize="24"
+                   FontFamily="Roboto"/>
+
+        <TextBlock Grid.Column="0"
+                   Grid.Row="1"
+                   Text="Имя"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Left"
+                   Margin="77 0 0 0"
+                   FontSize="24"
+                   FontFamily="Roboto"/>
+
+        <TextBlock Grid.Column="0"
+                   Grid.Row="2"
+                   Text="Отчество"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Left"
+                   Margin="77 0 0 0"
+                   FontSize="24"
+                   FontFamily="Roboto"/>
+
+        <TextBlock Grid.Column="0"
+                   Grid.Row="3"
+                   Text="Роль"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Left"
+                   Margin="77 0 0 0"
+                   FontSize="24"
+                   FontFamily="Roboto"/>
+
+        <TextBlock Grid.Column="0"
+                   Grid.Row="4"
+                   Text="Группа"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Left"
+                   Margin="77 0 0 0"
+                   FontSize="24"
+                   FontFamily="Roboto"/>
+
+        <TextBlock Grid.Column="0"
+                   Grid.Row="5"
+                   Text="Логин"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Left"
+                   Margin="77 0 0 0"
+                   FontSize="24"
+                   FontFamily="Roboto"/>
+
+        <!-- Правый столбец -->
+        <TextBlock Grid.Column="1"
+                   Grid.Row="0"
+                   Text="Иванов"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Left"
+                   Margin="77 0 0 0"
+                   FontSize="24"
+                   FontFamily="Roboto"
+                   FontWeight="Bold"/>
+
+        <TextBlock Grid.Column="1"
+                   Grid.Row="1"
+                   Text="Иван"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Left"
+                   Margin="77 0 0 0"
+                   FontSize="24"
+                   FontFamily="Roboto"
+                   FontWeight="Bold"/>
+
+        <TextBlock Grid.Column="1"
+                   Grid.Row="2"
+                   Text="Иванович"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Left"
+                   Margin="77 0 0 0"
+                   FontSize="24"
+                   FontFamily="Roboto"
+                   FontWeight="Bold"/>
+
+        <TextBlock Grid.Column="1"
+                   Grid.Row="3"
+                   Text="Студент"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Left"
+                   Margin="77 0 0 0"
+                   FontSize="24"
+                   FontFamily="Roboto"
+                   FontWeight="Bold"/>
+
+        <TextBlock Grid.Column="1"
+                   Grid.Row="4"
+                   Text="ИСП11-1 "
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Left"
+                   Margin="77 0 0 0"
+                   FontSize="24"
+                   FontFamily="Roboto"
+                   FontWeight="Bold"/>
+
+        <TextBlock Grid.Column="1"
+                   Grid.Row="5"
+                   Text="ivanov_i "
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Left"
+                   Margin="77 0 0 0"
+                   FontSize="24"
+                   FontFamily="Roboto"
+                   FontWeight="Bold"/>
+        <Border Grid.Column="0"
+                Grid.Row="6"
+                Grid.ColumnSpan="2">
+            <TextBlock Text="Прогресс изучения курса"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Left"
+                       Margin="77 0 0 0"
+                       FontSize="24"
+                       FontFamily="Roboto"/>
+        </Border>
+        <ProgressBar Height="63" 
+                     Width="531" 
+                     Grid.Column="1"
+                     Grid.Row="6"
+                     Margin="0 0 43 0"
+                     HorizontalAlignment="Right"
+                     Value="40"
+                     Maximum="100"
+                     Minimum="0"/>
+
+        <Border Grid.Row="7"
+                Grid.Column="1"
+                BorderBrush="#C6644F"
+                BorderThickness="2"
+                CornerRadius="8"
+                Width="163"
+                Height="63"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Center"
+                Margin="0 0 43 0"
+                Padding="1">
+            <Button Content="Выйти"
+                    FontSize="24"
+                    FontFamily="Roboto"
+                    Background="{x:Null}"
+                    BorderThickness="0"/>
+        </Border>
     </Grid>
 </Page>

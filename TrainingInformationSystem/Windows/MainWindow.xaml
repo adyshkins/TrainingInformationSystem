@@ -43,7 +43,8 @@
                            HorizontalAlignment="Center"
                            VerticalAlignment="Center"
                            FontSize="24"
-                           FontFamily="Roboto" PreviewMouseUp="TextBlock_PreviewMouseUp"
+                           FontFamily="Roboto" 
+                           PreviewMouseUp="TextBlock_PreviewMouseUp"
                            />
             </Border>
 
@@ -149,7 +150,9 @@
                    VerticalAlignment="Center"
                    Margin="0 0 43 0"
                    Width="70"
-                   Height="70" Source="/TrainingInformationSystem;component/Sourse/iconUser.png"/>
+                   Height="70" 
+                   Source="/TrainingInformationSystem;component/Sourse/iconUser.png"
+                   PreviewMouseUp ="Image_PreviewMouseUp"/>
             <Frame Grid.Row="1" 
                    x:Name="mainFrame" 
                    NavigationUIVisibility="Hidden"/>

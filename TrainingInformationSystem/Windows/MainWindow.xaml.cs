@@ -32,5 +32,10 @@ namespace TrainingInformationSystem.Windows
         {
             mainFrame.Navigate(new LessonPage());
         }
+
+        private void Image_PreviewMouseUp(object sender, MouseButtonEventArgs e)
+        {
+            mainFrame.Navigate(new AccountTeacherPage());
+        }
     }
 }
