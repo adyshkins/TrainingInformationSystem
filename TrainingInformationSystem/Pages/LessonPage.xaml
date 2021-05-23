@@ -1,0 +1,77 @@
+﻿<Page x:Class="TrainingInformationSystem.Pages.LessonPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:TrainingInformationSystem.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="720" 
+      d:DesignWidth="965"
+      Title="LessonPage">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="121"/>
+        </Grid.RowDefinitions>
+        <StackPanel>
+            <TextBlock Text="Информатика, как научная дисциплина"
+                       x:Name="tbTitleLesson"
+                       HorizontalAlignment="Center"
+                       FontSize="36"
+                       FontFamily="Roboto"
+                       Margin="50 7 43 0"
+                       FontWeight="Bold"/>
+
+            <TextBlock Text="Информатика - дисциплина, изучающая свойства информации, а также способы представления, накопления, обработки и передачи информации с помощью технических средств.
+
+На Западе применяют другой термин: «computer science» – компьютерная наука.
+
+Информатика – очень широкая сфера, возникшая на стыке нескольких фундаментальных и прикладных дисциплин. Теоретическую основу информатики образует группа фундаментальных наук, которую в равной степени можно отнести и к математике, и к кибернетике: теория информации, теория алгоритмов, математическая логика, комбинаторный анализ, формальная грамматика и т.д. Информатика имеет и собственные разделы: операционные системы, архитектура ЭВМ, "
+                       x:Name="tbTextLesson"
+                       HorizontalAlignment="Center"
+                       FontSize="24"
+                       TextWrapping="Wrap"
+                       FontFamily="Roboto"
+                       Margin="50 37 43 0"/>
+        </StackPanel>
+
+        <Border Grid.Row="1" 
+                Background="#C6644F"
+                BorderThickness="2"
+                CornerRadius="8"
+                Width="163"
+                Height="63"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Center"
+                Margin="0 0 251 0"
+                Padding="1">
+            <Button x:Name="btnTest" 
+                    Content="Пройти тест"
+                    FontSize="24"
+                    FontFamily="Roboto"
+                    Background="{x:Null}"
+                    BorderThickness="0"
+                    Foreground="#FFFFFF"
+                    Click="btnTest_Click"/>
+        </Border>
+        
+        <Border Grid.Row="1" 
+                BorderBrush="#C6644F"
+                BorderThickness="2"
+                CornerRadius="8"
+                Width="163"
+                Height="63"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Center"
+                Margin="0 0 43 0"
+                Padding="1">
+            <Button Content="Выйти"
+                    FontSize="24"
+                    FontFamily="Roboto"
+                    Background="{x:Null}"
+                    BorderThickness="0"
+                    />
+        </Border>
+    </Grid>
+</Page>
