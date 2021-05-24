@@ -38,91 +38,106 @@
             <Border Grid.Row="1" 
                     Background="#C6644F"
                     Margin="0 1">
-                <TextBlock Text="Лекция №1"
+                <TextBlock x:Name="tbL1" 
+                           Text="Лекция №1"
                            Foreground="White"
                            HorizontalAlignment="Center"
                            VerticalAlignment="Center"
                            FontSize="24"
                            FontFamily="Roboto" 
-                           PreviewMouseUp="TextBlock_PreviewMouseUp"
+                           PreviewMouseUp="tbL1_PreviewMouseUp"
                            />
             </Border>
 
             <Border Grid.Row="2" 
                     Background="#C6644F"
                     Margin="0 1">
-                <TextBlock Text="Лекция №2"
+                <TextBlock x:Name="tbL2" 
+                           Text="Лекция №2"
                            Foreground="White"
                            HorizontalAlignment="Center"
                            VerticalAlignment="Center"
                            FontSize="24"
-                           FontFamily="Roboto"/>
+                           FontFamily="Roboto"
+                           PreviewMouseUp="tbL2_PreviewMouseUp"/>
             </Border>
 
             <Border Grid.Row="3" 
                     Background="#C6644F"
                     Margin="0 1">
-                <TextBlock Text="Лекция №3"
+                <TextBlock x:Name="tbL3"
+                           Text="Лекция №3"
                            Foreground="White"
                            HorizontalAlignment="Center"
                            VerticalAlignment="Center"
                            FontSize="24"
-                           FontFamily="Roboto"/>
+                           FontFamily="Roboto"
+                           PreviewMouseUp="tbL3_PreviewMouseUp"/>
             </Border>
 
             <Border Grid.Row="4" 
                     Background="#C6644F"
                     Margin="0 1">
-                <TextBlock Text="Лекция №4"
+                <TextBlock x:Name="tbL4"
+                           Text="Лекция №4"
                            Foreground="White"
                            HorizontalAlignment="Center"
                            VerticalAlignment="Center"
                            FontSize="24"
-                           FontFamily="Roboto"/>
+                           FontFamily="Roboto"
+                           PreviewMouseUp="tbL4_PreviewMouseUp"/>
             </Border>
 
             <Border Grid.Row="5" 
                     Background="#C6644F"
                     Margin="0 1">
-                <TextBlock Text="Лекция №5"
+                <TextBlock x:Name="tbL5"
+                           Text="Лекция №5"
                            Foreground="White"
                            HorizontalAlignment="Center"
                            VerticalAlignment="Center"
                            FontSize="24"
-                           FontFamily="Roboto"/>
+                           FontFamily="Roboto"
+                           PreviewMouseUp="tbL5_PreviewMouseUp"/>
             </Border>
 
             <Border Grid.Row="6" 
                     Background="#C6644F"
                     Margin="0 1">
-                <TextBlock Text="Лекция №6"
+                <TextBlock x:Name="tbL6"
+                           Text="Лекция №6"
                            Foreground="White"
                            HorizontalAlignment="Center"
                            VerticalAlignment="Center"
                            FontSize="24"
-                           FontFamily="Roboto"/>
+                           FontFamily="Roboto"
+                           PreviewMouseUp="tbL6_PreviewMouseUp"/>
             </Border>
 
             <Border Grid.Row="7" 
                     Background="#C6644F"
                     Margin="0 1">
-                <TextBlock Text="Лекция №7"
+                <TextBlock x:Name="tbL7"
+                           Text="Лекция №7"
                            Foreground="White"
                            HorizontalAlignment="Center"
                            VerticalAlignment="Center"
                            FontSize="24"
-                           FontFamily="Roboto"/>
+                           FontFamily="Roboto"
+                           PreviewMouseUp="tbL7_PreviewMouseUp"/>
             </Border>
 
             <Border Grid.Row="8" 
                     Background="#C6644F"
                     Margin="0 1">
-                <TextBlock Text="Лекция №8"
+                <TextBlock x:Name="tbL8"
+                           Text="Лекция №8"
                            Foreground="White"
                            HorizontalAlignment="Center"
                            VerticalAlignment="Center"
                            FontSize="24"
-                           FontFamily="Roboto"/>
+                           FontFamily="Roboto"
+                           PreviewMouseUp="tbL8_PreviewMouseUp"/>
             </Border>
 
             <Border Grid.Row="9" 

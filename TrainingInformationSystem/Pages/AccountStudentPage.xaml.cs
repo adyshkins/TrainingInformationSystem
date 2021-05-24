@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using TrainingInformationSystem.ClassHelper;
 
 namespace TrainingInformationSystem.Pages
 {
@@ -23,6 +24,13 @@ namespace TrainingInformationSystem.Pages
         public AccountStudentPage()
         {
             InitializeComponent();
+
+            tblastName.Text = UserDataClass.user.LastName;
+            tbFirstName.Text = UserDataClass.user.FirstName;
+            tbMiddleName.Text = UserDataClass.user.Patronimic;
+            tbLogin.Text = UserDataClass.user.Login;
+            tbGroup.Text = UserDataClass.user.Group.NumberGroup;
+            prbProgress.Value = Convert.ToDouble(UserDataClass.user.Progress);
         }
     }
 }

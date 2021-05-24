@@ -37,6 +37,7 @@
                         BorderBrush="#C6644F"
                         Padding="2"> 
                     <TextBox x:Name="txtLogin" 
+                             Text="Логин"
                              BorderThickness="0"
                              FontSize="24"
                              FontFamily="Roboto"
@@ -60,6 +61,7 @@
                         BorderBrush="#C6644F"
                         Padding="2">
                     <TextBox x:Name="txtPassword" 
+                             Text="Пароль"
                              BorderThickness="0"
                              FontSize="24"
                              FontFamily="Roboto"

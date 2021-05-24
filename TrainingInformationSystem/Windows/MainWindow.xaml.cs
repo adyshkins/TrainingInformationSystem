@@ -20,22 +20,81 @@ namespace TrainingInformationSystem.Windows
     /// </summary>
     public partial class MainWindow : Window
     {
-        public MainWindow()
+        private int roleUser;
+        public MainWindow(int role)
         {
+            roleUser = role;
             InitializeComponent();
-            mainFrame.Navigate(new StartPage());
+
+            if (role == 1)
+            {
+                mainFrame.Navigate(new StartPage());
+
+                tbTitle.Text = String.Empty;
+            }
+            else
+            {
+                mainFrame.Navigate(new AccountTeacherPage());
+                tbTitle.Text = "Личный кабинет";
+            }
+           
 
             ClassHelper.ClassNavigate.frame = mainFrame;
         }
 
-        private void TextBlock_PreviewMouseUp(object sender, MouseButtonEventArgs e)
-        {
-            mainFrame.Navigate(new LessonPage());
-        }
-
         private void Image_PreviewMouseUp(object sender, MouseButtonEventArgs e)
         {
-            mainFrame.Navigate(new AccountTeacherPage());
+            if (roleUser == 1)
+            {
+                mainFrame.Navigate(new AccountStudentPage());
+                tbTitle.Text = "Личный кабинет";
+            }
+            else
+            {
+                mainFrame.Navigate(new AccountTeacherPage());
+                tbTitle.Text = "Личный кабинет";
+            }
+            
+        }
+
+        private void tbL1_PreviewMouseUp(object sender, MouseButtonEventArgs e)
+        {
+            mainFrame.Navigate(new LessonPage(1));
+        }
+
+        private void tbL2_PreviewMouseUp(object sender, MouseButtonEventArgs e)
+        {
+            mainFrame.Navigate(new LessonPage(2));
+        }
+
+        private void tbL3_PreviewMouseUp(object sender, MouseButtonEventArgs e)
+        {
+            mainFrame.Navigate(new LessonPage(3));
+        }
+
+        private void tbL4_PreviewMouseUp(object sender, MouseButtonEventArgs e)
+        {
+            mainFrame.Navigate(new LessonPage(4));
+        }
+
+        private void tbL5_PreviewMouseUp(object sender, MouseButtonEventArgs e)
+        {
+            mainFrame.Navigate(new LessonPage(5));
+        }
+
+        private void tbL6_PreviewMouseUp(object sender, MouseButtonEventArgs e)
+        {
+            mainFrame.Navigate(new LessonPage(6));
+        }
+
+        private void tbL7_PreviewMouseUp(object sender, MouseButtonEventArgs e)
+        {
+            mainFrame.Navigate(new LessonPage(7));
+        }
+
+        private void tbL8_PreviewMouseUp(object sender, MouseButtonEventArgs e)
+        {
+            mainFrame.Navigate(new LessonPage(8));
         }
     }
 }

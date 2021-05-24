@@ -44,7 +44,7 @@
                     FontFamily="Roboto"
                     Background="{x:Null}"
                     BorderThickness="0"
-                    />
+                    Click="Button_Click"/>
         </Border>
     </Grid>
 </Page>

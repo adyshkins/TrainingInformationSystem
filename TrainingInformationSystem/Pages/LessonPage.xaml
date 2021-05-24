@@ -14,8 +14,10 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="121"/>
         </Grid.RowDefinitions>
-        <StackPanel>
+        <ScrollViewer>
+              <StackPanel>
             <TextBlock Text="Информатика, как научная дисциплина"
+                       TextWrapping="Wrap"
                        x:Name="tbTitleLesson"
                        HorizontalAlignment="Center"
                        FontSize="36"
@@ -35,6 +37,8 @@
                        FontFamily="Roboto"
                        Margin="50 37 43 0"/>
         </StackPanel>
+        </ScrollViewer>
+      
 
         <Border Grid.Row="1" 
                 Background="#C6644F"
@@ -71,7 +75,7 @@
                     FontFamily="Roboto"
                     Background="{x:Null}"
                     BorderThickness="0"
-                    />
+                    Click="Button_Click"/>
         </Border>
     </Grid>
 </Page>

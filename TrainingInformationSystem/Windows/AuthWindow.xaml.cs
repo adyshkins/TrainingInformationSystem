@@ -13,6 +13,8 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using TrainingInformationSystem.Windows;
+using TrainingInformationSystem.EF;
+using TrainingInformationSystem.ClassHelper;
 
 namespace TrainingInformationSystem
 {
@@ -21,6 +23,7 @@ namespace TrainingInformationSystem
     /// </summary>
     public partial class AuthWindow : Window
     {
+      
         public AuthWindow()
         {
             InitializeComponent();
@@ -28,9 +31,39 @@ namespace TrainingInformationSystem
 
         private void btnSignIn_Click(object sender, RoutedEventArgs e)
         {
-            MainWindow mainWindow = new MainWindow();
-            mainWindow.Show();
-            Close();
+            var userAuth = EF.AppData.Context.User.ToList().
+                Where(i => i.Login == txtLogin.Text && i.Password == txtPassword.Text).
+                FirstOrDefault();
+
+            if (userAuth != null)
+            {
+                if (userAuth.IDRole == 1)
+                {
+                    UserDataClass.user = userAuth;
+
+                    MainWindow mainWindow = new MainWindow(1);
+                    mainWindow.Show();
+                    Close();
+                }
+                else if (userAuth.IDRole == 2)
+                {
+                    MainWindow mainWindow = new MainWindow(2);
+                    mainWindow.Show();
+                    Close();
+                }
+                else
+                {
+                    MainWindow mainWindow = new MainWindow(3);
+                    mainWindow.Show();
+                    Close();
+                }
+            }
+
+            else
+            {
+                MessageBox.Show("Пользователя с такими данными не существует", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+            
         }
     }
 }

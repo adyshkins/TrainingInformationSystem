@@ -14,6 +14,7 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="121"/>
         </Grid.RowDefinitions>
+        
         <StackPanel>
             <TextBlock Text="Лекция №2 Понятие информации"
                        x:Name="tbTitleLesson"
@@ -21,9 +22,11 @@
                        FontSize="36"
                        FontFamily="Roboto"
                        Margin="50 7 43 0"
-                       FontWeight="Bold"/>
+                       FontWeight="Bold"
+                       TextWrapping="Wrap"/>
 
-            <TextBlock Text="Что в переводе с латинского означает слово informatio?"
+            <TextBlock x:Name="tbQuestion" 
+                       Text="Что в переводе с латинского означает слово informatio?"
                        HorizontalAlignment="Left"
                        FontSize="36"
                        TextWrapping="Wrap"
@@ -89,12 +92,14 @@
                 VerticalAlignment="Center"
                 Margin="0 0 251 0"
                 Padding="1">
-            <Button Content="Ответить"
+            <Button x:Name="btnAnswer" 
+                    Content="Ответить"
                     FontSize="24"
                     FontFamily="Roboto"
                     Background="{x:Null}"
                     BorderThickness="0"
-                    Foreground="#FFFFFF"/>
+                    Foreground="#FFFFFF"
+                    Click="btnAnswer_Click"/>
         </Border>
 
         <Border Grid.Row="1" 

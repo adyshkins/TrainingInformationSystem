@@ -81,7 +81,8 @@
                    FontFamily="Roboto"/>
 
         <!-- Правый столбец -->
-        <TextBlock Grid.Column="1"
+        <TextBlock x:Name="tblastName" 
+                   Grid.Column="1"
                    Grid.Row="0"
                    Text="Иванов"
                    VerticalAlignment="Center"
@@ -91,7 +92,8 @@
                    FontFamily="Roboto"
                    FontWeight="Bold"/>
 
-        <TextBlock Grid.Column="1"
+        <TextBlock x:Name="tbFirstName" 
+                   Grid.Column="1"
                    Grid.Row="1"
                    Text="Иван"
                    VerticalAlignment="Center"
@@ -101,7 +103,8 @@
                    FontFamily="Roboto"
                    FontWeight="Bold"/>
 
-        <TextBlock Grid.Column="1"
+        <TextBlock x:Name="tbMiddleName" 
+                   Grid.Column="1"
                    Grid.Row="2"
                    Text="Иванович"
                    VerticalAlignment="Center"
@@ -121,7 +124,8 @@
                    FontFamily="Roboto"
                    FontWeight="Bold"/>
 
-        <TextBlock Grid.Column="1"
+        <TextBlock x:Name="tbGroup" 
+                   Grid.Column="1"
                    Grid.Row="4"
                    Text="ИСП11-1 "
                    VerticalAlignment="Center"
@@ -131,7 +135,8 @@
                    FontFamily="Roboto"
                    FontWeight="Bold"/>
 
-        <TextBlock Grid.Column="1"
+        <TextBlock x:Name="tbLogin" 
+                   Grid.Column="1"
                    Grid.Row="5"
                    Text="ivanov_i "
                    VerticalAlignment="Center"
@@ -150,7 +155,8 @@
                        FontSize="24"
                        FontFamily="Roboto"/>
         </Border>
-        <ProgressBar Height="63" 
+        <ProgressBar x:Name="prbProgress" 
+                     Height="63" 
                      Width="531" 
                      Grid.Column="1"
                      Grid.Row="6"

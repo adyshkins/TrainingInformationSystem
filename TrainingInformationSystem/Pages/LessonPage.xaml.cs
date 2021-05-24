@@ -20,14 +20,28 @@ namespace TrainingInformationSystem.Pages
     /// </summary>
     public partial class LessonPage : Page
     {
+        private int numberLesson;
         public LessonPage()
         {
             InitializeComponent();
         }
+        public LessonPage(int numLesson)
+        {
+            InitializeComponent();
+            numberLesson = numLesson;
+            tbTitleLesson.Text = EF.AppData.Context.Lesson.Where(i => i.IDLesson == numLesson + 1).FirstOrDefault().LessonTitle;
+            tbTextLesson.Text = EF.AppData.Context.Lesson.Where(i => i.IDLesson == numLesson + 1).FirstOrDefault().LessonContent;
+
+        }
 
         private void btnTest_Click(object sender, RoutedEventArgs e)
         {
-            ClassHelper.ClassNavigate.frame.Navigate(new TestPage());
+            ClassHelper.ClassNavigate.frame.Navigate(new TestPage(numberLesson));
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Shutdown();
         }
     }
 }
